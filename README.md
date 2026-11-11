@@ -16,10 +16,12 @@ and drafts reminder messages.
 - **Google Gemini API**: invoice parsing, insights, reminder drafting
 
 ## Run it
-1. Python 3.10+. `pip install -r requirements.txt`
-2. Copy `.env.example` to `.env`, fill in your PayPal sandbox client ID and secret and your GEMINI API key
-3. `python app.py`, then open http://localhost:5000
-4. Create an invoice, open the Pay link, log in with a PayPal **sandbox personal** test account, approve.Use a US sandbox buyer account, since two accounts in the same country cannot transact in USD.
+## Run it
+1. Download or clone this repo, then open a terminal inside the project folder (the one that contains app.py and requirements.txt).
+2. Python 3.10+. Run: pip install -r requirements.txt
+3. Copy .env.example to .env, then fill in your PayPal sandbox client ID and secret and your Gemini API key.
+4. Run: python app.py, then open http://localhost:5000
+5. Create an invoice, open the Pay link in a private window, log in with a PayPal sandbox personal test account from the United States, and approve. You land back on the dashboard with the invoice marked Paid.
    You land back on the dashboard with the invoice marked Paid.
 
 Optional webhook: expose the app with a public URL, set `BASE_URL`, and add `POST /api/webhook`
